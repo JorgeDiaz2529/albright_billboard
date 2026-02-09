@@ -89,8 +89,8 @@ class Billboard:
 if __name__ == "__main__":
     billboard = Billboard()
 
-    billboard.add_design(Design("Albright College: 1856", (255, 0, 255), delay=5000))
-    billboard.add_design(Design("Albright College: 1857", (220, 20, 60)))
-   # billboard.add_design(Design("Thanks for Visiting", (34, 139, 34), delay=2500))
+    billboard.add_design(Design("Albright College: 1856", (255, 0, 255), delay=2500))
+    billboard.add_design(Design("Albright College", (220, 20, 60), delay=2500))
+   #billboard.add_design(Design("Thanks for Visiting", (34, 139, 34), delay=2500))
 
     billboard.run()
