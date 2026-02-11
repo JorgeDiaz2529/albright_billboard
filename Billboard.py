@@ -17,14 +17,9 @@ class Billboard:
         self.size = (width, height)
         self.screen = pygame.display.set_mode(self.size)
         pygame.display.set_caption("Animated Billboard")
-        pygame.mixer.music.load('assignments/15_final_game/CSC142/Catch_The_Ball.py/sounds/background.mp3')
+        #pygame.mixer.music.load('assignments/15_final_game/CSC142/Catch_The_Ball.py/sounds/background.mp3')
         
-
-        
-        
-        pygame.mixer.music.play(-1, 0.0)
-        
-        
+        #pygame.mixer.music.play(-1, 0.0)
 
         self.clock = pygame.time.Clock()
         self.font = pygame.font.SysFont(None, 64)
@@ -108,13 +103,12 @@ class Billboard:
 if __name__ == "__main__":
     billboard = Billboard()
 
-    billboard.add_design(Design("Albright College: 1856", (255, 0, 255), delay=2500))
-    billboard.add_design(Design("Albright College", (220, 20, 60), delay=2500))
+    billboard.add_design(Design("Albright College: 1856", (255, 0, 255), delay=2500, image_path="images/albrightLogo.png"))
     billboard.add_design(Design("Welcome to our school!", (50, 168, 82), delay=2500))
     billboard.add_design(Design("Learn!", (66, 135, 245), delay=2500))
-    billboard.add_design(Design("persue your passion!", (9, 107, 96), delay=2500))
+    billboard.add_design(Design("Pursue your passions!", (9, 107, 96), delay=2500))
     billboard.add_design(Design("Make new friends!", (245, 170, 66), delay=2500))
     billboard.add_design(Design("Join in on our activities!", (75, 66, 245), delay=2500))
-   #billboard.add_design(Design("Thanks for Visiting", (34, 139, 34), delay=2500))
+    billboard.add_design(Design("Thanks for visiting", (34, 139, 34), delay=2500))
 
     billboard.run()
