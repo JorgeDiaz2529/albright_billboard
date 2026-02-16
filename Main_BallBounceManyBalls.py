@@ -1,5 +1,5 @@
-# credit for original code goes to Irv Kalb's chapter 6 of Object Oriented Python
-# credit for code that was memorized here also goes to vlogize from Youtube. Link: https://www.youtube.com/watch?v=51ZozZ1cIW0
+# Credit for original code goes to Irv Kalb's chapter 6 of Object Oriented Python
+# Credit for code that was memorized for this code also goes to vlogize from Youtube. Link: https://www.youtube.com/watch?v=51ZozZ1cIW0
 
 # 1 - Import packages
 import pygame
