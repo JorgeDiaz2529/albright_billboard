@@ -11,7 +11,7 @@ class Billboard:
         self.screen = pygame.display.set_mode(self.size)
         pygame.display.set_caption("Animated Billboard")
 
-        pygame.mixer.music.load('assignments/15_final_game/CSC142/Vibe_Code_The.py/Albright_Athetics.py/background.mp3')
+        pygame.mixer.music.load('audio/background.mp3')
         
         pygame.mixer.music.play(-1, 0.0)
 
@@ -97,7 +97,7 @@ class Billboard:
 if __name__ == "__main__":
     billboard = Billboard()
 
-    billboard.add_design(Design("Albright College: 1856", (255, 0, 255), delay=5000, image_path="assignments/15_final_game/CSC142\Vibe_Code_The.py/Albright_Athetics.py/Albrightlogo2.py.webp"))
+    billboard.add_design(Design("Albright College: 1856", (255, 0, 255), delay=5000, image_path="images/Albrightlogo2.py.webp"))
     billboard.add_design(Design("Welcome to our school!", (50, 168, 82), delay=2500))
     billboard.add_design(Design("Learn!", (66, 135, 245), delay=2500))
     billboard.add_design(Design("Pursue your passions!", (9, 107, 96), delay=2500))
